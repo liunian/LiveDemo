@@ -1,3 +1,3 @@
-This is a simple project to create live demo for web pages. It's a simple version of jsbin or jsfiddle, but no such powerful functions such as syntax validating and saving.
+这是一个类似jsbin或jsfiddle的网页在线demo，但没有那些如语法检查/保存等强大功能，适用于页面中展示某段代码。如果需要使用那些功能，直接使用jsfiddle或jsbin更加的好。或者也可以用开源的jsbin来搭建一个属于自己的，当然，在PHP的版本和子域名上有些缺陷，需要小心一点。
 
-这是一个类似jsbin或jsfiddle的网页在线demo，但没有那些如语法检查/保存等强大功能，适用于页面中展示某段代码。
+此处使用了开源的CodeMirror代码。

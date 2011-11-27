@@ -50,7 +50,7 @@ function displayPage(){
 <!doctype html>
 <html>
 <head>
-    <script type="text/javascript" src="http://js.3conline.com/min/temp/v2/core-pc_v1.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
     <style type="text/css">
         .red{color:red;}
     </style>
@@ -58,10 +58,9 @@ function displayPage(){
 <body>
     <p id="version"></p>
     <script type="text/javascript">
-        pc.ready(function($){
-            var ver = pc.getElem('#version');
-            pc.setText(ver, "version: " + pc.version);
-            pc.addClass(ver, 'red');
+        jQuery(document).ready(function($){
+            $('#version').css({'width':100, 'height':100, 'background':'green', 'position':'absolute'})
+            .addClass('red').animate({'top': 200, 'left':200, 'opacity': 0.5});
         });
     </script>
 </body>

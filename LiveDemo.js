@@ -331,7 +331,7 @@ LiveDemo.prototype = {
  * so after generate them, run the LiveDemo methods to act as a code editor.
  */
 var LiveDemoEditor = function(){
-    var defaultAction = "../demos/LiveDemoLib/try.php?onlyCode=true";
+    var defaultAction = "try.php?onlyCode=true";
     
     var makeFromValue = function(value, action){
         action = action || defaultAction;
