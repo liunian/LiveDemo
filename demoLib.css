@@ -1,0 +1,103 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-size: 13px;
+}
+textarea, pre, code{
+    font-family: Menlo, Monaco, consolas, monospace;    
+}
+.a{
+    width:1000px;
+    margin:20px 0;
+}
+.a-a{
+}
+.a-a-c{
+	display:inline-block;
+	height:12px;
+	line-height:12px;
+	padding:6px 10px;
+	-moz-box-shadow: 0 0 5px #FFFFFF;
+	-webkit-box-shadow: 0 0 5px #FFFFFF;
+	box-shadow: 0 0 5px #FFFFFF;
+	background: rgba(255, 255, 255, 0.3);
+	border: 1px solid #CCCCCC;
+	text-shadow: none;
+	cursor:pointer;
+	text-align:center;
+	
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 0px 0px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.a-a-c:hover{
+    -moz-box-shadow: #fff 0px 0px 5px;
+    -webkit-box-shadow: #fff 0px 0px 5px;
+    box-shadow: #fff 0px 0px 5px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.a-a-c:active, .a-a-c:focus {
+    -moz-box-shadow: #C8C8C8 0px 0px 3px;
+    -webkit-box-shadow: #C8C8C8 0px 0px 3px;
+    box-shadow: #C8C8C8 0px 0px 3px;
+    border-color: #fff;
+    outline: 0;
+    text-shadow: none;
+}
+
+.a-a-c.current{    
+    background: #aaa;
+    background: rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    border: 1px solid #ccc;
+    -moz-box-shadow: #fff 0px 0px 5px;
+    -webkit-box-shadow: #fff 0px 0px 5px;
+    box-shadow: #fff 0px 0px 5px;
+    
+    background-image: -webkit-gradient(radial, center center, 0, center center, 50, color-stop(0, #BFBFBF), color-stop(1, #949494));
+}
+
+.a-b{    
+    margin-top:30px;
+    padding:6px;
+    border: 1px solid #ccc;
+    font-family: Menlo, Monaco, consolas, monospace;
+    font-size: 12px;
+    color: black;
+}
+.a-b-c{
+    display:none;
+    max-height:600px;
+}
+
+.d{}
+.e{}
+.a textarea {
+    margin-top: 10px;
+    resize: none;
+    border:none;
+    -webkit-appearance: none;
+}
+.a iframe{
+    border:none;
+    height:400px;
+}
+
+.a textarea, .a iframe{
+    width:100%;
+    overflow:auto;
+    outline:none;
+}
+
+/* reset codemirror */
+.CodeMirror-scroll{
+    height:auto;
+    min-height:50px;/*
+    _height:100px;*/
+    _height:expression(this.scrollHeight > 400 ? "400px" :	(this.scrollHeight < 50 ? "50px" : "auto"));
+    max-height:600px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CodeMirror/lib/codemirror.css">
+    <link rel="stylesheet" href="CodeMirror/theme/default.css">
+    <link rel="stylesheet" href="demoLib.css" type="text/css" media="screen">
+    <script type="text/javascript" src="CodeMirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="CodeMirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="CodeMirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="CodeMirror/mode/css/css.js"></script>
+    <script type="text/javascript" src="CodeMirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script type="text/javascript" src="demoLib.js"></script>
+</head>
+<body>
+    <!-- demo begin -->
+    <div class="a">
+        <div class="a-a">
+            <span class="a-a-c a-a-a current">Code</span>
+            <span class="a-a-c a-a-b">Render</span>
+        </div>
+        <div class="a-b">
+            <div class="a-b-c a-b-a" style="display:block;">
+                <!-- generate target and iframe name by js -->
+                <form class="a-b-a-f" action="try.php?onlyCode=true" method="post" autocomplete="off">
+                    <textarea name="demoCode" class="a-b-a-t">
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src="http://js.3conline.com/min/temp/v2/core-pc_v1.js"></script>
+    <style type="text/css">
+        .red{color:red;}
+    </style>
+</head>
+<body>
+    <p id="version"></p>
+    <script type="text/javascript">
+        pc.ready(function($){
+            var ver = pc.getElem('#version');
+            pc.setText(ver, "version: " + pc.version);
+            pc.addClass(ver, 'red');
+        });
+    </script>
+</body>
+</html>
+                    </textarea>				    
+                </form>
+            </div>
+            <div class="a-b-c a-b-b"></div><!-- generate iframe by js -->
+        </div>
+    </div>
+    <!-- demo end -->
+    
+    
+    <div class="a">
+        <div class="a-a">
+            <span class="a-a-c a-a-a current">Code</span>
+            <span class="a-a-c a-a-b">Render</span>
+        </div>
+        <div class="a-b">
+            <div class="a-b-c a-b-a" style="display:block;">
+                <form class="a-b-a-f" action="try.php?onlyCode=true" method="post" autocomplete="off">
+                    <textarea name="demoCode" class="a-b-a-t">
+                        <h2>Foobar</h2>
+                    </textarea>				    
+                </form>
+            </div>
+            <div class="a-b-c a-b-b"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        new LiveDemo();
+    </script>
+</body>
+</html>
