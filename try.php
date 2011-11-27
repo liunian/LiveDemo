@@ -23,7 +23,7 @@ function displayPage(){
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CodeMirror/lib/codemirror.css">
     <link rel="stylesheet" href="CodeMirror/theme/default.css">
-    <link rel="stylesheet" href="demoLib.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="LiveDemo.css" type="text/css" media="screen">
     <style type="text/css">
     .a{width:100%; height:100%;}
     .a .CodeMirror-scroll{max-height:100%;}
@@ -34,7 +34,7 @@ function displayPage(){
     <script type="text/javascript" src="CodeMirror/mode/javascript/javascript.js"></script>
     <script type="text/javascript" src="CodeMirror/mode/css/css.js"></script>
     <script type="text/javascript" src="CodeMirror/mode/htmlmixed/htmlmixed.js"></script>
-    <script type="text/javascript" src="demoLib.js"></script>
+    <script type="text/javascript" src="LiveDemo.js"></script>
 </head>
 <body>
     <div class="a">
