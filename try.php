@@ -50,18 +50,11 @@ function displayPage(){
 <!doctype html>
 <html>
 <head>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <style type="text/css">
-        .red{color:red;}
-    </style>
 </head>
 <body>
     <p id="version"></p>
     <script type="text/javascript">
-        jQuery(document).ready(function($){
-            $('#version').css({'width':100, 'height':100, 'background':'green', 'position':'absolute'})
-            .addClass('red').animate({'top': 200, 'left':200, 'opacity': 0.5});
-        });
+        document.getElementById('version').innerHTML = 'Output version here';
     </script>
 </body>
 </html>
