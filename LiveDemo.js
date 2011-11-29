@@ -70,7 +70,8 @@ function getElementsByClass(searchClass, node, tag) {
 }
 
 function hasClass(element, className) {
-    return element.className.indexOf(className) !== -1;
+	var s = ' ', cls = s + element.className + s;
+	return s(s + className + s) !== -1;
 }
 
 function addClass(element, className) {
