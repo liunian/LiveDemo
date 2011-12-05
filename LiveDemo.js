@@ -71,7 +71,7 @@ function getElementsByClass(searchClass, node, tag) {
 
 function hasClass(element, className) {
 	var s = ' ', cls = s + element.className + s;
-	return s(s + className + s) !== -1;
+	return cls.indexOf(s + className + s) !== -1;
 }
 
 function addClass(element, className) {
@@ -156,7 +156,7 @@ function isFunction(o) {
 
 function isBool(o) {
     //return Object.prototype.toString.call(o) === 'object Boolean]';
-    return o === !!o;
+	return o === true || o === false;
 }
 /**
  * add an each to array
